@@ -18,19 +18,28 @@
 
   <section id="pantalla-inicio">
     <h2>Encontrá tu camino</h2>
+    <p id="texto-ultimo" class="etiqueta oculto"></p>
     <button id="boton-empezar">Empezar</button>
   </section>
 
   <section id="pantalla-quiz" class="oculto">
     <p id="contador">1/20</p>
-    <h2 id="texto-pregunta"></h2>
+    <div class="barra"><div id="progreso"></div></div>
+    <h2 id="texto-pregunta" aria-live="polite"></h2>
     <div id="opciones"></div>
+    <button id="boton-volver" class="secundario oculto">Volver</button>
   </section>
 
   <section id="pantalla-resultado" class="oculto">
     <p class="etiqueta">Tu carrera es:</p>
     <h2 id="texto-resultado"></h2>
+    <p id="texto-segundo" class="etiqueta oculto"></p>
     <button id="boton-repetir">Repetir</button>
+  </section>
+
+  <section id="pantalla-error" class="oculto">
+    <h2>No pudimos cargar el test</h2>
+    <button id="boton-reintentar">Reintentar</button>
   </section>
 
   <script src="script.js"></script>
